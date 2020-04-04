@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: linear-gradient(
+          rgba(183, 218, 197, 0.5),
+          rgba(106, 145, 122, 0.5)
+        );
+      }
+      .divi {
+        margin: 50px;
+        text-align: center;
+      }
+
+      #survey-form {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(19, 185, 88, 0.6);
+        border-radius: 5px;
+        padding: 30px;
+      }
+      label,
+      select,
+      input,
+      textarea {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        margin-right: auto;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .form-control {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="form_mod">
+      <div class="divi">
+        <h1 id="title">BASIC SURVEY FORM</h1>
+        <p id="description">New form for get info from users</p>
+      </div>
+      <form id="survey-form">
+        <label for="name" id="name-label">NAME</label><br />
+        <input
+          id="name"
+          type="text"
+          placeholder="John Doe"
+          class="form-control"
+        /><br />
+        <label for="email" id="email-label">EMAIL</label><br />
+        <input
+          id="email"
+          type="email"
+          placeholder="abc@mail.com"
+          class="form-control"
+        /><br />
+        <label for="number" id="number-label">AGE</label><br />
+        <input
+          id="number"
+          type="number"
+          min="10"
+          max="100"
+          placeholder="Age"
+          class="form-control"
+        /><br />
+        <label for="dropdown">which work suits you ?</label><br />
+        <select id="dropdown" class="form-control">
+          <option value="student">Student</option>
+          <option value="Part_time_learner">Part Time Learner</option>
+          <option value="full_stack_dev">Full Stack Developer</option>
+          <option value="full_time_job">Full Time Job</option> </select
+        ><br />
+        <label for="rad-btn"> Which differs you ? </label><br />
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label> <br />
+        <label for="check">Select Your Interested Domain</label><br />
+        <input type="checkbox" value="html" name="html" id="html" />
+        <label for="html">HTML</label><br />
+        <input type="checkbox" value="css" name="css" id="css" />
+        <label for="css">CSS</label><br />
+        <input type="checkbox" value="js" name="js" id="js" />
+        <label for="js">JavaScript</label><br />
+        <input type="checkbox" value="php" name="php" id="php" />
+        <label for="php">PHP</label><br />
+        <label for="textare">Some Personnal Advice to other Developers</label
+        ><br />
+        <textarea
+          name="comment"
+          id="textare"
+          cols="30"
+          rows="10"
+          class="form-control"
+        ></textarea
+        ><br />
+        <input type="submit" id="submit" class="form-control" />
+      </form>
+    </section>
+  </body>
+</html>
